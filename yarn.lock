@@ -4610,9 +4610,9 @@ expand-tilde@^2.0.0, expand-tilde@^2.0.2:
   dependencies:
     homedir-polyfill "^1.0.1"
 
-express-http-proxy@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/express-http-proxy/-/express-http-proxy-1.2.0.tgz#a19087c3e52c00494604e703464d655595fdba51"
+express-http-proxy@1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/express-http-proxy/-/express-http-proxy-1.4.0.tgz#36524e22f0b93869ca10119b551b23b2626d1e0e"
   dependencies:
     debug "^3.0.1"
     es6-promise "^4.1.1"
