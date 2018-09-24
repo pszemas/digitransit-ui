@@ -705,6 +705,12 @@
     pirates "^3.0.1"
     source-map-support "^0.4.2"
 
+"@babel/runtime@7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.0.0.tgz#adeb78fedfc855aa05bc041640f3f6f98e85424c"
+  dependencies:
+    regenerator-runtime "^0.12.0"
+
 "@babel/runtime@7.0.0-beta.51", "@babel/runtime@^7.0.0-beta.42":
   version "7.0.0-beta.51"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.0.0-beta.51.tgz#48b8ed18307034c6620f643514650ca2ccc0165a"
@@ -10142,16 +10148,23 @@ react-swipeable-views-core@^0.12.11, react-swipeable-views-core@^0.12.14:
     "@babel/runtime" "^7.0.0-beta.42"
     warning "^4.0.1"
 
-react-swipeable-views-utils@0.12.13:
-  version "0.12.13"
-  resolved "https://registry.yarnpkg.com/react-swipeable-views-utils/-/react-swipeable-views-utils-0.12.13.tgz#fe102524180bf568f746e844c8d74b9cd3e7e0b8"
+react-swipeable-views-core@^0.13.0:
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/react-swipeable-views-core/-/react-swipeable-views-core-0.13.0.tgz#6bf8a8132a756355444537672a14e84b1e3b53c2"
   dependencies:
-    babel-runtime "^6.23.0"
+    "@babel/runtime" "7.0.0"
+    warning "^4.0.1"
+
+react-swipeable-views-utils@0.13.0:
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/react-swipeable-views-utils/-/react-swipeable-views-utils-0.13.0.tgz#0ea17aa67f88a69d534c79d591f8d82ef98346a4"
+  dependencies:
+    "@babel/runtime" "7.0.0"
     fbjs "^0.8.4"
     keycode "^2.1.7"
     prop-types "^15.6.0"
-    react-event-listener "^0.5.1"
-    react-swipeable-views-core "^0.12.11"
+    react-event-listener "^0.6.0"
+    react-swipeable-views-core "^0.13.0"
 
 react-swipeable-views-utils@^0.12.13:
   version "0.12.14"
@@ -10420,6 +10433,10 @@ regenerator-runtime@^0.10.5:
 regenerator-runtime@^0.11.0, regenerator-runtime@^0.11.1:
   version "0.11.1"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.11.1.tgz#be05ad7f9bf7d22e056f9726cee5017fbf19e2e9"
+
+regenerator-runtime@^0.12.0:
+  version "0.12.1"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.12.1.tgz#fa1a71544764c036f8c49b13a08b2594c9f8a0de"
 
 regenerator-transform@^0.10.0:
   version "0.10.1"
