@@ -151,7 +151,7 @@
     "favicons-webpack-plugin": "0.0.9",
     "fetch-mock": "7.0.0-alpha.6",
     "file-loader": "1.1.11",
-    "gemini": "5.7.2",
+    "gemini": "5.9.1",
     "gemini-browserstack": "1.1.0",
     "graphql": "0.13.2",
     "html-reporter": "1.2.0",
