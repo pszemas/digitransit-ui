@@ -5740,10 +5740,10 @@ gemini-configparser@^1.0.0:
   dependencies:
     lodash "^4.17.4"
 
-gemini-core@^2.9.0:
-  version "2.11.2"
-  resolved "https://registry.yarnpkg.com/gemini-core/-/gemini-core-2.11.2.tgz#242dc48d225289bd4129eba85b3a51f19249c55b"
-  integrity sha512-pAMMLGTCeB5ZohO4hFKI6JrPHAad+mmCYWojOTg0USfPRW9of2Xc6IOvcY4zOPchM0M7dVF1WReJoxk9L8M2Vg==
+gemini-core@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/gemini-core/-/gemini-core-3.0.1.tgz#0846df95d48229797198995b2091e7db7c02a555"
+  integrity sha512-srtbxwXWedj/hq6oJCaQBJXjU+OLdykZ3ueRIVib7K0yYNaBeXP4j+uMuQcbEfhbD0gJuEjHzLw6Js1MrUugxQ==
   dependencies:
     aliasify "^1.9.0"
     bluebird "^3.4.6"
@@ -5771,10 +5771,10 @@ gemini-coverage@^2.0.0:
     fs-extra "^5.0.0"
     handlebars "~1.3.0"
 
-gemini@5.7.2:
-  version "5.7.2"
-  resolved "https://registry.yarnpkg.com/gemini/-/gemini-5.7.2.tgz#f5740ef5f945708c857adcfc307eae43ab9b3cb0"
-  integrity sha512-xkGLi2KO6wCrESMj7R8aOKx6oviwpxS/aqijbYGtrlrjmf7wsXucf/qmj/fih/Stye7hjRz4T8OuLTVG3Sl//g==
+gemini@7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/gemini/-/gemini-7.0.0.tgz#8740f8dc537bf57d42cc44133f83a84cdbe97083"
+  integrity sha512-IpY0Z8uSwdZgq36pB0YHYfra1V+wTgtBIFz5cRwQwxOx0g1q6ceHYtroCeJJbmOA5Hx+un+WxY8iw+FLj0lFnQ==
   dependencies:
     bluebird "^3.4.6"
     chalk "^1.1.3"
@@ -5783,7 +5783,7 @@ gemini@5.7.2:
     debug "^2.2.0"
     fs-extra "^0.30.0"
     gemini-configparser "^1.0.0"
-    gemini-core "^2.9.0"
+    gemini-core "^3.0.1"
     gemini-coverage "^2.0.0"
     graceful-fs "^4.1.11"
     handlebars "^4.0.5"
