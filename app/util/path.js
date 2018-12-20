@@ -10,6 +10,7 @@ const debug = d('path.js');
 export const TAB_NEARBY = 'lahellasi';
 export const TAB_FAVOURITES = 'suosikit';
 export const PREFIX_ROUTES = 'linjat';
+export const PREFIX_DISRUPTIONS = 'poikkeukset';
 export const PREFIX_STOPS = 'pysakit';
 export const PREFIX_TERMINALS = 'terminaalit';
 export const PREFIX_ITINERARY_SUMMARY = 'reitti';
@@ -142,6 +143,9 @@ export const navigateTo = ({
   let push;
   switch (context) {
     case PREFIX_STOPS:
+    case PREFIX_DISRUPTIONS:
+      push = true;
+      break;
     case PREFIX_ROUTES:
       push = true;
       break;
