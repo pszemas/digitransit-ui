@@ -177,11 +177,6 @@
       font-size: 2.1em;
     }
   }
-  &.disruptions {
-    .routes-platforms-page-tab_icon {
-      color: #fff;
-    }
-  }
 }
 
 .stop-page-tab_icon {
@@ -576,46 +571,6 @@ hr.action-bar {
   .showroute-number {
     margin-right: 15px;
     float: left;
-  }
-}
-
-.route-alert-container {
-  background: $white;
-  padding-top: 0.8em;
-  padding-bottom: 1em;
-  padding-left: 2.5em;
-  padding-right: 2.5em;
-  display: flex;
-  border-top: 1px solid rgb(221,221,221);
-  border-bottom: 1px solid rgb(221,221,221);
-
-  .alert-left-panel {
-    margin-right: 1em;
-    padding-top: 0.3em;
-
-    .icon-container svg {
-      width: 1.4em;
-      height: 1.4em;
-    }
-  }
-  .alert-topbar {
-    display: flex;
-    justify-content: space-between;
-    .alert-shortName {
-      font-family: $font-family-narrow;
-      font-weight: 500;
-      font-size: 1.15em;
-    }
-  }
-  .alert-right-panel {
-    .alert-date {
-      font-size: $font-size-small;
-      font-weight: 500;
-    }
-    .alert-details {
-      font-size: $font-size-small;
-      font-weight: 300;
-    }
   }
 }
 
