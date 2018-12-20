@@ -22,7 +22,11 @@ function StopPageTabContainer({
   const currentLocation = location.pathname.substr(
     location.pathname.lastIndexOf('/') + 1,
   );
-  if (currentLocation !== 'aikataulu' && currentLocation !== 'linjat') {
+  if (
+    currentLocation !== 'aikataulu' &&
+    currentLocation !== 'linjat' &&
+    currentLocation !== 'poikkeukset'
+  ) {
     activeTab = 'right-now';
   } else {
     activeTab = currentLocation;
@@ -94,6 +98,27 @@ function StopPageTabContainer({
                 <FormattedMessage
                   id="routes-platforms"
                   defaultMessage="routes-platforms"
+                />
+              </div>
+            </div>
+          </Link>
+          <Link
+            to={`${urlBase}/poikkeukset`}
+            className={`stop-tab-singletab ${
+              activeTab === 'poikkeukset' ? 'active' : 'inactive'
+            }`}
+          >
+            <div className="stop-tab-singletab-container disruptions">
+              <div>
+                <Icon
+                  img="icon-icon_caution"
+                  className="routes-platforms-page-tab_icon"
+                />
+              </div>
+              <div>
+                <FormattedMessage
+                  id="disruptions"
+                  defaultMessage="Disruptions"
                 />
               </div>
             </div>
