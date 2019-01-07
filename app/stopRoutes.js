@@ -46,8 +46,8 @@ function getRoutesAndPlatformsForStops(location, cb) {
     .catch(errorLoading);
 }
 
-function getDisruptionsForStops(location, cb) {
-  return import(/* webpackChunkName: "stop" */ './component/DisruptionsForStops')
+function getDisruptions(location, cb) {
+  return import(/* webpackChunkName: "stop" */ './component/StopAlertsContainer')
     .then(loadRoute(cb))
     .catch(errorLoading);
 }
@@ -118,14 +118,16 @@ export default function getStopRoutes(isTerminal = false) {
         >
           <Route path="kartta" fullscreenMap />
         </Route>
-        <Route
-          path="poikkeukset"
-          getComponent={getDisruptionsForStops}
-          queries={isTerminal ? terminalQueries : stopQueries}
-          render={RelayRenderer}
-        >
-          <Route path="kartta" fullscreenMap />
-        </Route>
+        {!isTerminal && (
+          <Route
+            path="hairiot"
+            getComponent={getDisruptions}
+            queries={stopQueries}
+            render={RelayRenderer}
+          >
+            <Route path="kartta" fullscreenMap />
+          </Route>
+        )}
       </Route>
     </Route>
   );
