@@ -1,13 +1,14 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import cx from 'classnames';
-import { intlShape } from 'react-intl';
+import { FormattedMessage, intlShape } from 'react-intl';
 
 import RouteNumberContainer from './RouteNumberContainer';
 import RouteDestination from './RouteDestination';
 import DepartureTime from './DepartureTime';
 import PlatformNumber from './PlatformNumber';
 import ComponentUsageExample from './ComponentUsageExample';
+import Icon from './Icon';
 import { isCallAgencyDeparture } from '../util/legUtils';
 import {
   currentTime as exampleCurrentTime,
@@ -26,7 +27,14 @@ function Departure(props) {
   }
 
   return (
-    <p className={cx('departure', 'route-detail-text', props.className)}>
+    <p
+      className={cx(
+        'departure',
+        'route-detail-text',
+        props.className,
+        props.canceled && 'disruption-active',
+      )}
+    >
       {!props.staticDeparture && (
         <DepartureTime
           departureTime={props.departure.stoptime}
@@ -53,7 +61,14 @@ function Departure(props) {
         isArrival={props.isArrival}
         isLastStop={props.isLastStop}
       />
-      {platformNumber}
+      {props.canceled ? (
+        <div className="trip-cancelled">
+          <Icon className={cx('trip-cancelled-icon')} img="icon-icon_caution" />
+          <FormattedMessage id="cancelled" defaultMessage="Cancelled" />
+        </div>
+      ) : (
+        platformNumber
+      )}
     </p>
   );
 }
