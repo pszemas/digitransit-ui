@@ -195,17 +195,18 @@
     .route-destination {
       padding-left: $padding-medium;
     }
-    .trip-cancelled {
-      color: #ca2c53;
-      font-weight: 500;
-      .icon-container {
-        margin-right: 0.3em;
-      }
-      svg.trip-cancelled-icon {
-        color: $white;
-        fill: #ca2c53;
-      }
-    }
+  }
+}
+
+.trip-cancelled {
+  color: #ca2c53;
+  font-weight: 500;
+  .icon-container {
+    margin-right: 0.3em;
+  }
+  svg.trip-cancelled-icon {
+    color: $white;
+    fill: #ca2c53;
   }
 }
 
